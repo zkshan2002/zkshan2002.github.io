@@ -24,20 +24,18 @@
                   Zikang Shan（单子康）
                 </p>
                 <p>
-                  Email: shanzikang [at] stu.pku.edu [dot] cn
-                </p>
-                <p>
-                  I am a first-year Ph.D. student at Peking University, advised by Prof. <a href="http://www.liweiwang-pku.com/">Liwei Wang</a>. 
-                  Currently, I am also a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>.
-                  Before that, I received my Bachelor's degree from Peking University. 
-                  During my undergraduate years, I was honored to be advised by Prof. Liwei Wang and Prof. <a href="https://hughw19.github.io/">He Wang</a>.
+                  I am a second-year Ph.D. student at Peking University, advised by Prof. <a href="http://www.liweiwang-pku.com/">Liwei Wang</a>. I'm fortunate to also work closely with Prof. <a href="https://hanzhong-ml.github.io/">Han Zhong</a>. Currently, I am a research intern at Qwen Business Group; previously, I spent two years as a research intern at Microsoft Research Asia, mentored by Dr. <a href="https://scholar.google.com/citations?user=b-LJkLQAAAAJ&hl=en">Li Zhao</a>. I received my Bachelor's degree from Peking University. During my undergraduate years, I was honored to be advised by Prof. Liwei Wang and Prof. <a href="https://hughw19.github.io/">He Wang</a>.
                 </p>
                 <p>
                   Please feel free to contact me if you want to discuss or collaborate!
+                  Email: shanzikang [at] stu.pku.edu [dot] cn
                 </p>
                 <p style="text-align:center">
                   <a href="https://scholar.google.com/citations?user=qBy4wKcAAAAJ&hl=en">Google Scholar</a> &nbsp;|&nbsp;
-                  <a href="https://github.com/zkshan2002/">Github</a>
+                  <a href="https://orcid.org/my-orcid?orcid=0009-0006-9212-6381">ORCID</a> &nbsp;|&nbsp;
+                  <a href="https://github.com/zkshan2002/">Github</a> &nbsp;|&nbsp;
+                  <a href="https://x.com/2k5han">X</a> &nbsp;|&nbsp;
+                  <a href="https://www.linkedin.com/in/zikang-shan-ab5489346/">Linkedin</a>
                 </p>
               </td>
               <!-- <td style="padding:2.5%;width:37%;max-width:37%">
@@ -58,10 +56,42 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:16px;width:20%;vertical-align:middle">
-              May 1, 2025
+              Aug, 2026
             </td>
             <td style="padding:8px;width:80%;vertical-align:middle">
-              <a href="#RTO">Paper</a> accepted at ICML (Spotlight). See you in Vancouver!
+              Joined Qwen Business Group as a research intern.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              Apr, 2026
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="#GenAC">Paper</a> available on Arxiv.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              Apr, 2026
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="#SHAPE">Paper</a> accepted at ACL main conference.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              May, 2025
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="#RTO">Paper</a> accepted at ICML as spotlight. See you in Vancouver!
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              Sep, 2024
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              Joined Microsoft Research Asia as a research intern.
             </td>
           </tr>
           </tbody></table>
@@ -72,14 +102,51 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I am interested in <strong>reinforcement learning</strong>, believing its potential remains underexplored today as both a general learning paradigm and a local behavior optimizer. 
-                  Recently, I particularly focus on applying RL to <strong>large language models</strong>, viewing reinforcement learning as a critical direction to scale up model capabilities with compute when high quality data grows increasingly scarce.
+                  My research focuses on the <strong>credit assignment</strong> problem in reinforcement learning for <strong>LLM post-training</strong>: how to attribute sparse outcome feedback to token-level decisions. I consider a principled, general and scalable solution as the key to robust scaling of LLM RL, and have pursued it through different approaches: deriving implicit process reward models, designing model-free hierarchical advantage estimation, and improving value model expressivity. As this bottleneck grows more pressing in frontier agentic RL training, I am actively pursuing better solutions.
                 </p>
               </td>
             </tr>
           </tbody></table>
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- GenAC -->
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/genac.png" width="100%" />
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle" id="GenAC">Bringing Value Models Back: Generative Critics for Value Modeling in LLM Reinforcement Learning</span>
+                <br>
+                  <strong>Zikang Shan</strong>, Han Zhong, Liwei Wang, Li Zhao
+                <br>
+                <em>Under review</em>
+                <br>
+                  <a href="https://arxiv.org/abs/2604.10701">Paper</a>
+                <br>
+                  Grounded by representation complexity and approximation experiments, we identify limited critic expressivity as a reason why PPO fails in reasoning tasks, and propose generative critics that perform chain-of-thought reasoning before prediction, improving both value estimation and downstream RL performance.
+                <br>
+              </td>
+            </tr>
+
+            <!-- SHAPE -->
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/shape.png" width="100%" />
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle" id="SHAPE">SHAPE: Stage-aware Hierarchical Advantage via Potential Estimation for LLM Reasoning</span>
+                <br>
+                  Zhengyang Ai, <strong>Zikang Shan</strong>, Xiaodong Ai, Jingxian Tang, Hangkai Hu, Pinyan Lu
+                <br>
+                <em>ACL 2026</em>, main conference
+                <br>
+                  <a href="https://aclanthology.org/2026.acl-long.1114/">Paper</a>
+                <br>
+                  We propose a model-free fine-grained credit assignment framework that rewards chain-of-thought segments with a tractable proxy and redistributes intra-segment credit by token entropy, yielding increased performance and token efficiency.
+                <br>
+              </td>
+            </tr>
+            
             <!-- RTO -->
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
@@ -88,14 +155,14 @@
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle" id="RTO">DPO Meets PPO: Reinforced Token Optimization for RLHF</span>
                 <br>
-                Han Zhong*, <strong>Zikang Shan*</strong>, Guhao Feng*, Wei Xiong, Xinle Cheng, Li Zhao, Di He, Jiang Bian, Liwei Wang
+                  Han Zhong*, <strong>Zikang Shan*</strong>, Guhao Feng*, Wei Xiong, Xinle Cheng, Li Zhao, Di He, Jiang Bian, Liwei Wang (* equal contribution)
                 <br>
-                <em>ICML</em>, 2025, <font color='red'>Spotlight</font>
+                <em>ICML 2025</em>, <font color='red'>spotlight poster</font>
                 <br>
-                  <a href="https://arxiv.org/abs/2404.18922">Paper</a> &nbsp;|&nbsp;
+                  <a href="https://proceedings.mlr.press/v267/zhong25b.html">Paper</a> &nbsp;|&nbsp;
                   <a href="https://github.com/zkshan2002/RTO">Code</a>
                 <br>
-                  Based on theoretical insights, we propose an alignment algorithm that is sample efficient and effective.
+                  We derive DPO-aligned models as implicit token-level process reward models and optimize with PPO, achieving theoretically grounded fine-grained alignment with improved sample efficiency and final performance.
                 <br>
               </td>
             </tr>
@@ -110,7 +177,7 @@
                 <br>
                   Weikang Wan*, Haoran Geng*, Yun Liu, <strong>Zikang Shan</strong>, Li Yi, Yaodong Yang, and He Wang
                 <br>
-                <em>ICCV</em>, 2023, <font color='red'>Oral presentation with all top rankings, best paper finalist</font>
+                <em>ICCV 2023</em>, <font color='red'>oral presentation, all top rankings, best paper finalist</font>
                 <br>
                   <a href="https://arxiv.org/abs/2304.00464">Paper</a> &nbsp;|&nbsp;
                   <a href="https://pku-epic.github.io/UniDexGrasp++/">Website</a> &nbsp;|&nbsp;
@@ -131,7 +198,7 @@
                 <br>
                   Yinzhen Xu*, Weikang Wan*, Jialiang Zhang*, Haoran Liu*, <strong>Zikang Shan</strong>, Hao Shen, Ruicheng Wang, Haoran Geng, Yijia Weng, Jiayi Chen, Tengyu Liu, Li Yi, and He Wang
                 <br>
-                <em>CVPR</em>, 2023
+                <em>CVPR 2023</em>
                 <br>
                   <a href="https://arxiv.org/abs/2303.00938">Paper</a> &nbsp;|&nbsp;
                   <a href="https://pku-epic.github.io/UniDexGrasp/">Website</a> &nbsp;|&nbsp;
@@ -148,7 +215,7 @@
                 <br>
                 <p style="text-align:right;font-size:small;">
                   This website is adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a> and deployed on <a href="https://pages.github.com/">Github Pages</a>. 
-                  Last updated on May 1, 2025.
+                  Last updated on Aug 2025.
                 </p>
               </td>
             </tr>
